@@ -9,7 +9,7 @@ RUN curl -LO https://github.com/prometheus/node_exporter/releases/download/v${ex
     && tar -xvzf node_exporter-${exporter_version}.linux-amd64.tar.gz  \
     && cp node_exporter-${exporter_version}.linux-amd64/node_exporter /tmp/
 
-FROM alpine
+FROM alpine:3.15
 
 COPY --from=building /tmp/node_exporter /usr/local/bin/
 
