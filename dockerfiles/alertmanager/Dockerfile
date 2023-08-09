@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.18.3
 
 LABEL maintainer="jeferson@linuxtips.com.br"
 LABEL version="1.0"
